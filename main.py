@@ -1,5 +1,3 @@
-print("WELCOME TO LIF PROGRAMMING!!!!")
-
 # Steps to do:
 # 0. Understand the equation (τm​dtdV​=−(V(t)−Vrest​)+Rm​I(t))!!! <----- WE ARE HERE
 # 1. Figure out how to write the differential equation in python
@@ -8,3 +6,30 @@ print("WELCOME TO LIF PROGRAMMING!!!!")
 # 4. Use Matplotlib to visualize the working using a range of data
 
 # Sreevatsa's branch for writing code to simulate the LIF differential equation
+
+import numpy as np
+
+# # Variables used in the equation
+# V = 0.0 # Membrane Potential of the neuron (initialized to 0)
+# V_rec = np.array() # Array that consists of the membrane potential after each time step
+# spikes = np.array() # Array that consists of the time stamps at which the neuron spiked
+# I = np.array() # Array of input current values at every time step with length of the number of steps
+# TAU = 0 # The Time Constant
+# dt = 0 # The time step (the difference between each time stamp we are testing)
+# threshold = 1.0 # The threshold that, if the membrane potential reaches, resets the membrane potential to 0
+
+
+# Function that runs the simulation
+# I: input current
+# tau: time constant (in ms)
+# threshold: threshold value to produce a spike
+# reset: reset value after a spike
+# dt: simulation time step in ms
+def LIF (I, TAU=10, dt=0.1, threshold = 1.0, reset = 0.0):
+    num_steps = len(I)
+    V_rec = np.zeros(num_steps)
+    spikes = np.array
+    #Fill in the function
+    return V_rec, spikes
+
+print ("LIF")
