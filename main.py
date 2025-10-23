@@ -10,13 +10,13 @@
 import numpy as np
 
 # # Variables used in the equation
-# V = 0.0 # Membrane Potential of the neuron (initialized to 0)
-# V_rec = np.array() # Array that consists of the membrane potential after each time step
-# spikes = np.array() # Array that consists of the time stamps at which the neuron spiked
-# I = np.array() # Array of input current values at every time step with length of the number of steps
-# TAU = 0 # The Time Constant
-# dt = 0 # The time step (the difference between each time stamp we are testing)
-# threshold = 1.0 # The threshold that, if the membrane potential reaches, resets the membrane potential to 0
+# V - Membrane Potential of the neuron (initialized to 0)
+# V_rec - Array that consists of the membrane potential after each time step
+# spikes - Array that consists of the time stamps at which the neuron spiked
+# I - Array of input current values at every time step with length of the number of steps
+# TAU - The Time Constant
+# dt - The time step (the difference between each time stamp we are testing)
+# threshold - The threshold that, if the membrane potential reaches, resets the membrane potential to 0
 
 
 # Function that runs the simulation
