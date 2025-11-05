@@ -26,13 +26,15 @@ import matplotlib.pyplot as plt
 # threshold: threshold value to produce a spike
 # reset: reset value after a spike
 # dt: simulation time step in ms
-def LIF (I, TAU=10, dt=0.1, threshold = 1.0, reset = 0.0):
+def LIF (I, TAU=10, dt=0.1, threshold = 1.0, reset = 0.0, V_rest = 0.5, rm = 1):
     num_steps = len(I)
     V_rec = np.zeros(num_steps)
+    V_rec[0] = V_rest
     spikes = []
     
     for i in range(num_steps-1):
-        V_rec[i+1] = V_rec[i] + dt*((I[i]-V_rec[i])/TAU) # From Euler's method of approximation
+        #V_rec[i+1] = V_rec[i] + dt*((I[i]-V_rec[i])/TAU) # From Euler's method of approximation      
+        V_rec[i+1] = V_rec[i] + dt * (((rm*I[i]) -(V_rec[i] - V_rest))/TAU)
         
         if (V_rec[i+1] > threshold):
             spikes.append(i*dt)
