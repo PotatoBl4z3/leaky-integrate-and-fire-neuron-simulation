@@ -35,7 +35,7 @@ You will need Python installed along with the following libraries:
 pip install numpy matplotlib
 ```
 
-## ⚙️ Function Parameters
+## Function Parameters
 
 The `LIF` function accepts the following arguments:
 
