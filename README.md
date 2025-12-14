@@ -1,7 +1,3 @@
-Here is a clean, structured `README.md` based on the code and comments provided.
-
------
-
 # Leaky Integrate-and-Fire (LIF) Neuron Simulation
 
 This project simulates the dynamics of a Leaky Integrate-and-Fire (LIF) neuron. It implements the differential equation governing membrane potential changes over time, approximates the solution using Euler's method, and visualizes the neuron's spiking behavior given an input current.
